@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/*
+
+# Generated Part A model binaries and machine-specific runtime metadata
+/artifacts/part_a/models/
+/artifacts/part_a/runtime.json
+docs/

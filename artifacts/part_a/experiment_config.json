@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "image_size": [
+    64,
+    64
+  ],
+  "color_mode": "L",
+  "class_to_index": {
+    "Covid": 0,
+    "Normal": 1,
+    "Viral Pneumonia": 2
+  },
+  "n_folds": 5,
+  "random_forest_trees": 300,
+  "mlp_hidden_dims": [
+    128,
+    64
+  ],
+  "mlp_epochs": 80,
+  "batch_size": 32,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "original_train_samples": 251,
+  "original_test_samples": 66,
+  "clean_train_samples": 242,
+  "clean_test_samples": 65,
+  "selection_rule": "mean CV accuracy, then mean CV weighted F1",
+  "selected_baseline": "PyTorch MLP (128, 64)",
+  "data_root_relative": "data/Covid19-dataset"
+}

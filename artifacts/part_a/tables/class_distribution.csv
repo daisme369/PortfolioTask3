@@ -1,0 +1,4 @@
+class_name,original_train,original_test,clean_train,clean_test
+Covid,111,26,105,25
+Normal,70,20,68,20
+Viral Pneumonia,70,20,69,20
