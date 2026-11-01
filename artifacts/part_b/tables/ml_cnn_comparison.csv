@@ -1,0 +1,5 @@
+model,model_type,fit_images,validation_images,test_images,test_accuracy,test_weighted_f1,test_macro_f1,test_loss,selection_protocol,selection_accuracy,selected_within_family
+Random Forest,Traditional ML,242,0,65,0.8307692307692308,0.8292152292152292,0.8183164983164982,,5-fold training CV,0.9171768707482992,False
+"PyTorch MLP (128, 64)",Traditional ML,242,0,65,0.9076923076923076,0.907268966180786,0.9062080466958516,,5-fold training CV,0.946173469387755,True
+CNN: Dense 128 / Dropout 0.5,Deep Learning,193,49,65,0.7846153846153846,0.7899770183112166,0.7777942521066549,0.489309050486638,Training validation holdout,0.9387755102040817,True
+CNN: Dense 64 / Dropout 0.3,Deep Learning,193,49,65,0.7846153846153846,0.791990231990232,0.783915343915344,0.5065804609885582,Training validation holdout,0.9387755102040817,False

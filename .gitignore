@@ -224,4 +224,6 @@ data/*
 # Generated Part A model binaries and machine-specific runtime metadata
 /artifacts/part_a/models/
 /artifacts/part_a/runtime.json
+/artifacts/part_b/models/
+/artifacts/part_b/runtime.json
 docs/

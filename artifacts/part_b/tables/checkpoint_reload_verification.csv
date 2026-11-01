@@ -1,0 +1,3 @@
+model_id,pt_parameters_equal,h5_parameters_equal,pt_max_logit_difference,h5_max_logit_difference
+cnn_dense128_dropout05,True,True,0.0,0.0
+cnn_dense64_dropout03,True,True,0.0,0.0

@@ -1,0 +1,4 @@
+class_name,train,validation,test
+Covid,84,21,25
+Normal,54,14,20
+Viral Pneumonia,55,14,20

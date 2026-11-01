@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "image_size": [
+    128,
+    128
+  ],
+  "input_channels": 1,
+  "class_to_index": {
+    "Covid": 0,
+    "Normal": 1,
+    "Viral Pneumonia": 2
+  },
+  "max_epochs": 40,
+  "early_stopping_monitor": "validation_accuracy",
+  "early_stopping_patience": 8,
+  "lr_plateau_epochs": 5,
+  "lr_scheduler_pytorch_patience": 4,
+  "lr_reduction_factor": 0.5,
+  "optimizer": "Adam",
+  "initial_learning_rate": 0.001,
+  "mixed_precision": true,
+  "num_workers": 2,
+  "pin_memory": true,
+  "variants": [
+    {
+      "id": "cnn_dense128_dropout05",
+      "name": "CNN: Dense 128 / Dropout 0.5",
+      "dense_units": 128,
+      "dropout": 0.5,
+      "batch_size": 32
+    },
+    {
+      "id": "cnn_dense64_dropout03",
+      "name": "CNN: Dense 64 / Dropout 0.3",
+      "dense_units": 64,
+      "dropout": 0.3,
+      "batch_size": 64
+    }
+  ],
+  "fit_images": 193,
+  "validation_images": 49,
+  "test_images": 65,
+  "validation_fraction": 0.2,
+  "selection_rule": "best validation accuracy, then lower validation loss",
+  "selected_cnn": "cnn_dense128_dropout05",
+  "augmentation": {
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": 10,
+    "brightness_jitter": 0.2,
+    "saturation_jitter": 0.2,
+    "rotation_fill": 0,
+    "applied_to": "training_only",
+    "mode": "online_per_image_per_epoch"
+  }
+}
